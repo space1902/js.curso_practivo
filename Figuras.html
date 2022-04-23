@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/stiles.css">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <header class="hero_geometria">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a class="nav__inicio" href="./index.html">Curso Java Script</a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a class="nav__links" href="./Figuras.html" >Figuras Geometricas</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="./promedio.html" >Promedio</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="./mediana.html" >Mediana</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="./moda.html" >Moda</a>
+                </li>
+                <!--<li class="nav__items">
+                    <a class="nav__links" href="./salarios.html" >Sueldos</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__links" href="./salarios.html" >Tienda</a>
+                </li> -->
+    
+                <img src="./images/close2.svg" alt="controllers" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu1.svg" alt="controllers" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero_tittle">Figuras geometricas</h1>
+            <p class="hero_paragraph">En la siguiente seccion se encuentra el taller de figuras geometricas.
+            </p>
+        </section>
+    </header>
+
+    <main>
+        <section class=" form__container ">
+            <div class="form__cont">
+                
+                <article class="form__icons">
+                    <h2 class="form_tittle">Calcular el area y perimetro de un cuadrado</h2>
+                    <label class="form__text" for="Cuadrado" >Escribe cuanto mide cada lado del cuadrado </label>
+                    <br />
+                    <input class="form__input" type="number" id="Cuadrado" />
+                    <br />
+                    <button  class="form__buttont" type="button" onclick="CalcularPerimetroCuadrado()">Calcular el perimetro</button>
+                    <button class="form__buttont" type="button" onclick="CalcularAreaCuadrado()">Calcular el area</button>
+                </article>
+                
+                <article class="form__icons">
+                    <h2 class="form_tittle">Calcular el area y perimetro de un Triangulo</h2>
+                    <label class="form__text" for="Triangulo">Escribe cuanto mide cada lado del triangulo </label>
+                    <br />
+                    <input class="form__input" type="number" id="Triangulo1"  placeholder="Lado1"/>
+                    <input class="form__input" type="number" id="Triangulo2"  placeholder="Lado2"/>
+                    <input class="form__input" type="number" id="Triangulo3"  placeholder="Base"/>
+                    <br />
+                    <button  class="form__buttont" type="button" onclick="CalcularPerimetroTriangulo()">Calcular el perimetro</button>
+                    <button  class="form__buttont" type="button" onclick="CalcularAreaTriangulo()">Calcular el area</button>
+                </article>
+                <article class="form__icons">
+                    <h2 class="form_tittle">Calcular el area y perimetro de un Circulo</h2>
+                    <label class="form__text" for="Circulo" >Escribe cuanto mide el radio del circulo </label>
+                    <br />
+                    <input class="form__input" type="number" id="Circulo" />
+                    <br />
+                    <button  class="form__buttont" type="button" onclick="CalcularPerimetroCirculo()">Calcular el perimetro</button>
+                    <button  class="form__buttont" type="button" onclick="CalcularAreaCirculo()">Calcular el area</button>
+                </article>
+        </div>
+        </section>
+    </main>
+    <script src ="./Figuras.js"></script>
+</body>
+</html>

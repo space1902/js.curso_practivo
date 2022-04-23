@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;600;700&display=swap');
+
+body{
+font-family: 'Akshar', sans-serif;
+}
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    justify-self: center;
+    padding: 13px, 30px;
+    color: rgb(49, 110, 190);
+}
+/* Header */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    color:rgb(247, 247, 253);
+    padding: var(--padding-container);
+    
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+}
+.hero::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/fondo.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+
+}
+.hero_mediana{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+}
+.hero_mediana::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/fondo_mediana.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+
+}
+.hero_sueldo{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+}
+.hero_sueldo::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/fondo_sueldo.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+
+}.hero_geometria{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+}
+.hero_geometria::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/fondo_geometria.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+
+}
+/* Segemento Nav*/
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display:flex;
+    align-items: center;
+
+}
+
+.nav__title{
+    font-size: 300;
+
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+
+}
+
+.nav__close{
+    display: var(--Show, none);
+}
+
+.nav__inicio{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Segemento hero copntainer*/
+
+.hero__container{
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content:center ;
+    gap: 1em;
+    padding-bottom: 300px;
+    text-align: center;
+}
+
+.hero_tittle{
+    font-size: 3rem;
+}
+
+
+/* Segemento about*/
+
+.about{
+    text-align: center;
+    color: var(--color-title);
+}
+
+.subtittle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+
+}
+
+.about__paragraph{
+    line-height: 1.7;
+}
+
+.about__icons{
+    display:grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.about__icon{
+    width: 40px;
+
+}
+
+.about__main{
+    padding-top: 80px;
+    display:grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+
+}
+
+/* Segemento Knowlege*/
+
+.knowledge{
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+
+.Knowledge__container{
+    
+    color: var(--color-title);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.Knowledge__paragraph{
+    line-height:1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.knowledge_figure{
+    max-width: 500px;
+
+}
+
+.knowledge_img{
+    width: 100%;
+    display: block;
+
+}
+
+/*Segmento form*/
+
+.form__container{
+    padding-bottom: 50px;
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+.form__cont{
+    padding-top: 20px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+}
+
+.form__text{
+    color: var(--color-title);
+}
+
+.form__icons{
+    display:grid;
+    gap: 0.3em;
+    width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.form__input{
+    width: 200px;
+    height: 25px;
+}
+.form__input_html{
+    width: 200px;
+    height: 23px;
+}
+
+.form_tittle{
+    color: var(--color-title);
+    font-size:25Px;
+}
+
+.form__buttont{
+    border-radius: 30px;
+    border-style: none;
+    width: 200px;
+    height: 25px;
+    color:#fff;
+    background-color:#5875bf;
+}
